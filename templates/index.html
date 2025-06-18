@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Grammar Error Correction App</title>
+  <link rel="stylesheet" href="/static/style.css"/>
+</head>
+<body>
+  <main class="container">
+    <h1>Grammar Error Correction</h1>
+
+    <!-- Single sentence correction -->
+    <section>
+      <textarea id="inputText" placeholder="Type or paste text here…"></textarea>
+      <button id="correctBtn">Correct</button>
+      <h3>Corrected:</h3>
+      <p id="outputText"></p>
+    </section>
+
+    <!-- Batch file correction -->
+    <section>
+      <input type="file" id="fileInput" accept=".txt"/>
+      <button id="uploadBtn">Upload & Correct</button>
+    </section>
+  </main>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
